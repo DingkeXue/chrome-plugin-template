@@ -8,9 +8,6 @@ module.exports = {
   context: path.resolve(__dirname, './src'),
   entry: {
     popup: './popup/index.js',
-    books: './books/index.js',
-    article: './article/index.js',
-    develop: './develop/index.js',
     background: './background/index.js',
     'contentScripts/recommend': './contentScripts/recommend/index.js',
   },

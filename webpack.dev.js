@@ -20,27 +20,6 @@ const options = merge(common, {
       chunks: ['popup'],
       filename: 'popup.html',
     }),
-    new HtmlWebpackPlugin({
-      title: 'Develop',
-      template: './develop/index.html',
-      inject: true,
-      chunks: ['develop'],
-      filename: 'develop.html',
-    }),
-    new HtmlWebpackPlugin({
-      title: 'Article',
-      template: './article/index.html',
-      inject: true,
-      chunks: ['article'],
-      filename: 'article.html',
-    }),
-    new HtmlWebpackPlugin({
-      title: 'Books',
-      template: './books/index.html',
-      inject: true,
-      chunks: ['books'],
-      filename: 'books.html',
-    }),
     new WebpackShellPlugin({
       onBuildEnd: ['node scripts/remove-evals.js'],
     }),
